@@ -43,7 +43,7 @@ What this module does:
 
 ### 1) Prerequisites
 
-- A default **OIDC setup in Chainguard** (Custom IdP) using the guide:  
+- A default **OIDC setup in Chainguard** (Custom IdP)  
 
 By default, there is no OIDC provider configured in the registry. For the purpose of ECR mirroring, the OIDC IdP in Chainguard exists only to mint/verifiy tokens so your claim-match identity in AWS works. It doesn’t matter if there’s no user login button, no profile, no email scope, etc...
 
@@ -52,6 +52,7 @@ You can configure a simple google oauth client limited to the profile **openid**
 If you'd like your own IdP, you can follow the guides here: https://edu.chainguard.dev/chainguard/administration/custom-idps/custom-idps/#generic-integration-guide
 
 - AWS CLI installed and authenticated (SSO or keys).
+
 - Terraform installed.
 
 ### 2) Required Information
