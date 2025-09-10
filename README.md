@@ -22,7 +22,6 @@ This module provisions the **AWS-side trust** for Chainguard → AWS OIDC federa
 - [Create ECR Destination Repositories](#create-ecr-destination-repositories)
 - [Sync Private Catalog to ECR](#sync-private-catalog-to-ecr)
 - [Quick Verify (ECR Tags & Images)](#quick-verify-ecr-tags--images)
-- [Reference: Minimal Provider & Variables](#reference-minimal-provider--variables)
 - [Troubleshooting](#troubleshooting)
 
 ---
