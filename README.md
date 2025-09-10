@@ -60,7 +60,7 @@ What this module does:
 - `group_ids` – One or more Chainguard **group IDs** to bind to your AWS account.
 - `account` – Your **AWS account ID** (same as `aws_account_id`).
 
-> **Note:** `group_ids` are Chainguard **group** identifiers (not the org UID).
+> **Note:** `group_ids` are Chainguard **group** identifiers and you can include multiple if you have them
 
 ### 3) Set up Chainguard OIDC Trust to AWS (Chainguard side)
 
@@ -72,7 +72,7 @@ chainctl iam account-associations set aws $ORG_UID --account $AWS_ACCOUNT_ID
 
 ## Initialize the Terraform Module
 
-Add the module to your configuration:
+Use the default main.tf that includes only the module needed
 
 ```
 module "chainguard-account-association" {
@@ -154,7 +154,7 @@ aws ecr create-repository --region $AWS_REGION --repository-name <repo>/<image>
 # repeat as needed
 ```
 
-Replace <repo>/<image> with your desired structure. Ensure names align with the images in your private Chainguard org (e.g., those under cgr.dev/<your-org>).
+Replace repo/image with your desired structure. Ensure names align with the images in your private Chainguard org (e.g., those under cgr.dev/company.com).
 
 ## Sync Private Catalog to ECR
 
