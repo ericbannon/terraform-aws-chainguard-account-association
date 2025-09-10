@@ -58,7 +58,7 @@ What this module does:
 
 **Terraform Inputs**
 - `group_ids` – One or more Chainguard **group IDs** to bind to your AWS account.
-- `account` – Your **AWS account ID** (same as `aws_account_id`).
+- `account` – Your **AWS account ID**
 
 > **Note:** `group_ids` are Chainguard **group** identifiers and you can include multiple if you have them
 
